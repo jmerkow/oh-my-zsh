@@ -1,0 +1,38 @@
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+export PATH=$HOME/bin:$PATH
+
+
+alias untar='tar -xf'
+
+
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+alias grm='git rm'
+alias gtag='git tag -a'
+alias gdn='git diff --name-status'
+alias gba='git branch -a'
+alias glg='git-log-graph'
+alias glga='git-log-graph --all'
+
+alias git-log-graph='git log --graph --abbrev-commit --decorate --date=relative --color --format=format:'"'"'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'"'"''
+
+alias git-changelog='git log --date=short --color --format=format:'"'"'* %s - %C(blue)%an%C(reset) %C(bold green)(%ad)%C(reset)'"'"''
+alias git-changelog-nocolor='git log --shortstat --date=short --format=format:'"'"'* %s - %an (%ad)'"'"''
+alias git-changelog-short='git log --date=short --format=format:'"'"'* %s'"'"''
+
+alias gclog='git-changelog'
+alias gclognc='git-changelog-nocolor'
+alias gclogsm='git-changelog-short'
