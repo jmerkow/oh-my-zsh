@@ -111,3 +111,8 @@ else
     fi
   fi
 fi
+
+
+if [ -f ~/.oh-my-zsh/aliases/.zsh_alias ]; then
+    source ~/.oh-my-zsh/aliases/.zsh_alias
+fi
