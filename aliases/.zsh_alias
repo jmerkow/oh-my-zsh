@@ -36,3 +36,10 @@ alias git-changelog-short='git log --date=short --format=format:'"'"'* %s'"'"''
 alias gclog='git-changelog'
 alias gclognc='git-changelog-nocolor'
 alias gclogsm='git-changelog-short'
+
+alias cdw='cd /workspace/jameson'
+alias cds='cd /scratch/jameson'
+alias cdc='cd $HOME/Code'
+alias cdcc='cd $HOME/Code/caffe'
+
+
