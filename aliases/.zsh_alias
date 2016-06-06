@@ -42,4 +42,4 @@ alias cds='cd /scratch/jameson'
 alias cdc='cd $HOME/Code'
 alias cdcc='cd $HOME/Code/caffe'
 
-
+alias rsycssh='rsync -avWXxP --numeric-ids -e "ssh -T -c arcfour -o Compression=no -x"'
