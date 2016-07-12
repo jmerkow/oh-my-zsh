@@ -54,7 +54,7 @@ function ssh-tunnel() {
         localport=$port
     fi
 
-    echo ssh -N -L ${localport}:localhost:${port} ${remote}
+    ssh -N -L ${localport}:localhost:${port} ${remote}
 }
 
 alias ssht='ssh-tunnel'
