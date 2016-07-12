@@ -43,3 +43,18 @@ alias cdc='cd $HOME/Code'
 alias cdcc='cd $HOME/Code/caffe'
 
 alias rsycssh='rsync -avWXxP --numeric-ids -e "ssh -T -c arcfour -o Compression=no -x"'
+
+
+function ssh-tunnel() {
+
+    remote=$1
+    port=$2
+    localport=$3
+    if [ -z "$localport" ]; then
+        localport=$port
+    fi
+
+    echo ssh -N -L ${localport}:localhost:${port} ${remote}
+}
+
+alias ssht='ssh-tunnel'
