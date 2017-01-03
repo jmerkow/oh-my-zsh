@@ -44,7 +44,6 @@ alias cdcc='cd $HOME/Code/caffe'
 
 alias rsycssh='rsync -avWXxP --numeric-ids -e "ssh -T -c arcfour -o Compression=no -x"'
 
-
 function ssh-tunnel() {
 
     remote=$1
@@ -58,3 +57,6 @@ function ssh-tunnel() {
 }
 
 alias ssht='ssh-tunnel'
+
+alias docker-compose-dev='docker-compose -f dev.yml'
+alias dcd='docker-compose-dev'
