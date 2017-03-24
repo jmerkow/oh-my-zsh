@@ -60,3 +60,4 @@ alias ssht='ssh-tunnel'
 
 alias docker-compose-dev='docker-compose -f dev.yml'
 alias dcd='docker-compose-dev'
+alias dcp='docker-compose -p raprod'
